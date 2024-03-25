@@ -11,3 +11,15 @@
 .video-preview-andrew {
 	background-image: url(../img/preview-video-andrew.webp) !important; 
 }
+
+.modal-content {
+	background-color: black;
+}
+
+.modal-body {
+	height: 500px;
+}
+
+.porto-media {
+	margin-bottom: 30px;
+}
