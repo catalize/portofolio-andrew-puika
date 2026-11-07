@@ -16,16 +16,11 @@
 
   $(function() {
     // Code here executes When the DOM is loaded...
-    // Load partials pages
     // Open a lightbox section from any in-page button (hero CTAs, cross-links)
     $(document).on('click', '[data-open-section]', function (e) {
       e.preventDefault();
       var id = $(this).attr('data-open-section');
       $('.navbar .navbar-nav .nav-link[href="#' + id + '"]').trigger('click');
-    });
-    $("div[data-includeHTML]").each(function () {                
-        $(this).load($(this).attr("data-includeHTML"));
-        console.log("loaded");
     });
   });
   $(window).on('load', function() {
@@ -38,6 +33,33 @@
   'use strict';
   $(function () {
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    /* Portfolio pop-ups: load YouTube only when a pop-up opens, and unload it on close
+       (keeps the page light and stops a video playing after its pop-up is closed). */
+    $(document).on('lity:ready', function (e, instance) {
+      var $root = instance && instance.element ? instance.element() : $('.lity');
+      $root.find('iframe[data-src]').each(function () {
+        $(this).attr('src', $(this).attr('data-src'));
+      });
+    });
+    $(document).on('lity:close', function (e, instance) {
+      var $root = instance && instance.element ? instance.element() : $('.lity');
+      $root.find('iframe[data-src]').removeAttr('src');
+    });
+
+    /* Release the preloader once the hero image is ready (or after 1.8s) instead of
+       waiting for every image on the page, which delays the window "load" event. */
+    var preDone = false;
+    var hidePreloader = function () {
+      if (preDone) { return; }
+      preDone = true;
+      $('.preloader-icon').fadeOut(300);
+      $('.preloader').delay(300).fadeOut(400);
+    };
+    var heroProbe = new Image();
+    heroProbe.onload = heroProbe.onerror = hidePreloader;
+    heroProbe.src = 'img/home-andrew.jpg';
+    setTimeout(hidePreloader, 1800);
 
     /* Timeline */
     var $tl = $('#timeline');

@@ -34,6 +34,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
   <!-- Web fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="img/home-andrew.jpg" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
   <!-- CSS vendors-->
   <link rel="stylesheet" href="css/bootstrap-custom.css">
@@ -130,7 +133,7 @@
             <div class="info-section single-section">
               <div class="row align-items-center">
                 <!-- Picture part-->
-                <div class="col-12 col-lg-5 info-img"><img class="img-fluid img-thumbnail" src="img/Andrew-Formal.jpg" alt="About Picture"></div>
+                <div class="col-12 col-lg-5 info-img"><img class="img-fluid img-thumbnail" src="img/Andrew-Formal.jpg" alt="About Picture" loading="lazy" decoding="async"></div>
                 <!-- Content part-->
                 <div class="col-12 col-lg-7 info-content">
                   <div class="content-block">
@@ -612,7 +615,7 @@ He is best!</p>
                   </a></div>
                 <!-- Single item-->
                 <div class="single-item col-6 col-lg-4 game immersive"><a class="portfolio-item" href="#inline-porto-codename-mindvoke" data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/thumb-porto-codename-mindvoke.png">
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/thumb-porto-codename-mindvoke.webp">
                       <div class="item-content">
                         <h6 class="content-title">Codename: mindVoke</h6><span class="content-more">More Info</span>
                       </div>
@@ -644,11 +647,187 @@ He is best!</p>
                   </a></div>
               </div>
               <!-- Inline Contents list-->
-              <div data-includeHTML="partials/porto-kadence.html"></div>
-              <div data-includeHTML="partials/porto-codename-mindvoke.html"></div>
-              <div data-includeHTML="partials/porto-millealab.html"></div>
-              <div data-includeHTML="partials/porto-spacecollab.html"></div>
-              <div data-includeHTML="partials/porto-cosmize.html"></div>
+                            <div id="inline-porto-kadence" class="modal-dialog lity-hide">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title video-title">VR Store Platform (Kadence International)</h3>
+                  </div>
+                  <div class="modal-body overflow-auto">
+                    <h5 class="video-title">About</h5>
+                    <p class="video-description">Kadence innovates by choosing Virtual World as a medium for conducting the platform for research. The platform shows marketplace research conclusions on customers inexpensively without additional costs.</p>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="https://static.wixstatic.com/media/0a6e18_9f8816b524b54df2aae5cf4d86a58e6d~mv2.png/v1/fill/w_600,h_338,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0a6e18_9f8816b524b54df2aae5cf4d86a58e6d~mv2.png"/>
+                    <h5 class="video-title">The Challenge</h5>
+                    <p class="video-description">Analyzing customer behavior and creating any scenario in the store using VR platform technology. This platform is useful for conducting customer behavior research without spending a lot of investment and time. </p>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="https://static.wixstatic.com/media/0a6e18_7e08ba6be76f454fa7673e0801579363~mv2.png/v1/fill/w_600,h_338,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0a6e18_7e08ba6be76f454fa7673e0801579363~mv2.png"/>
+                    <h5 class="video-title">The Solution</h5>
+                    <p class="video-description">A complete Virtual Reality Platform for analyzing customer behavior in the mini markets and supermarket stores. The researcher can make their scenario to create shelves and put products. After that researcher can analyze the result using a heat map and also ‘time to pick up’ calculation. Core features: Movement and Eye-Tracking, Virtual Token/Money, Virtual Shopping Experience, Adjustable Product Positioning and Scenario, Heatmap and Data Analytics. </p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe loading="lazy" class="embed-responsive-item" data-src="https://www.youtube.com/embed/-HuqC6WOfD4?si=Rj3M7uiX_8DGaqrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h5 class="video-title">My Contributions</h5>
+                    <p class="video-description">1. Co-Develop using Unreal Engine</p>
+                    <p class="video-description">2. Develop the heatmap system and capturing the experience data (gaze, navigation, point of interest, and other timing data)</p>
+                    <p class="video-description">3. Design UI/UX </p>
+                    <h5 class="video-title">Results</h5>
+                    <p class="video-description">Achieve 76.62% cost efficiency and 33.81% profit optimizations using VR solution rather than traditional ones.</p>
+                    </div>
+                </div>
+              </div>
+              			<div id="inline-porto-codename-mindvoke" class="modal-dialog lity-hide">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title video-title">Codename: mindVoke</h3>
+                  </div>
+                  <div class="modal-body overflow-auto">
+                    <h5 class="video-title">About</h5>
+                    <p class="video-description">Codename: mindVoke is more than just a shooter. It is an immersive experience that combines intense gunplay with stunning post-modern surrealist art. We are committed to pushing the boundaries of VR technology to create a game that truly allows players to explore the limits of their imagination.</p>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="img/porto-codename-mindvoke-2.jpeg"/>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="img/porto-codename-mindvoke-3.jpeg"/>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="img/porto-codename-mindvoke-4.jpeg"/>
+                    <h5 class="video-title">The Challenge: Building a Thrilling and Accessible Experience</h5>
+                    <p class="video-description">We're creating a fast-paced and strategic battle experience that keeps players hooked. Here's what we're focusing on:</p>
+                    <p class="video-description"> - Intense, Streamlined Gameplay: We want players to focus on the action, not a cluttered interface. We'll use a clear and simple user interface (UI) with easy-to-understand controls and information.</p>
+                    <p class="video-description"> - Smooth and Responsive Gameplay: Smooth gameplay is key! We'll optimize the connection for a lag-free experience, even with a high number of players.</p>
+                    <p class="video-description"> - Easy to Learn, Hard to Master Weapons: Our weapons will be intuitive and easy to pick up, but offer depth and mastery for dedicated players.</p>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="img/porto-codename-mindvoke-1.jpeg"/>
+                    <h5 class="video-title">Why this matters?</h5>
+                    <p class="video-description">Many arcade-style games struggle with player retention. We want to create a game that people get hooked on, keep coming back to, and enjoy mastering. By focusing on these challenges, we'll deliver a truly engaging experience for players of all skill levels.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe loading="lazy" class="embed-responsive-item" data-src="https://www.youtube.com/embed/kQ3R4ECLnzg?si=mx153zvYNB06r7bR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+            </div>
+                            <div id="inline-porto-millealab" class="modal-dialog lity-hide">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title video-title">Millealab</h3>
+                  </div>
+                  <div class="modal-body overflow-auto">
+                    <h5 class="video-title">About</h5>
+                    <p class="video-description">MilleaLab is an all-in-one Virtual Reality (VR) platform that supports you to create and access educational content based on 3D and Virtual Reality (VR) easily, quickly and affordably.</p>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="img/porto-millealab-1.webp"/>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="img/porto-millealab-2.webp"/>
+                    <h5 class="video-title">The Challenge</h5>
+                    <p class="video-description">VR offers promising opportunities to enhance students' learning experiences by improving comprehension, focus, and emotional engagement with the content. However, its potential is hindered by the high cost and technical expertise required to create VR content, limiting accessibility for educators without programming or 3D modeling skills.</p>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="img/porto-millealab-3.webp"/>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="img/porto-millealab-4.webp"/>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="img/porto-millealab-5.webp"/>
+                    <h5 class="video-title">The Solution</h5>
+                    <p class="video-description">Introducing a revolutionary platform: no-coding VR creation accessible on medium-spec computers with 2GB RAM, featuring thousands of educational 3D assets, cloud integration, and an affordable subscription model.</p>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="img/porto-millealab-creator-1.webp"/>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe loading="lazy" class="embed-responsive-item" data-src="https://www.youtube.com/embed/-OD1EQ2Cw5A?si=OCKDR1uzsYDPfeHJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h5 class="video-title">My Contributions</h5>
+                    <p class="video-description">1. Developing Millealab Viewer, displaying content and interactivity. Adjusting the experience so it is comfortable with users with VR Cardboard. </p>
+                    <p class="video-description">2. Leading the cloud system and API development allowing Creator and Viewer to be sync.</p>
+                    <p class="video-description">3. Structure the data as efficient as possible utilizing cloud backend to ensure as minimum cost as possible</p>
+                    <p class="video-description">4. Develop CI/CD for continuous deployment for Android and iOS platforms, saving the team immeasurable time.</p>
+                    <p class="video-description">5. Supervise Visual Scripting concept and design to ensure user-friendliness</p>
+                  </div>
+                </div>
+              </div>
+                            <div id="inline-porto-spacecollab" class="modal-dialog lity-hide">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title video-title">SpaceCollab</h3>
+                  </div>
+                  <div class="modal-body overflow-auto">
+                    <h5 class="video-title">About</h5>
+                    <p class="video-description">SpaceCollab is an immersive collaboration platform that provides virtual spaces for remote training and collaborations.</p>
+                    <h5 class="video-title">The Challenge</h5>
+                    <p class="video-description">The global pandemic has restricted our ability to connect emotionally and share knowledge due to limitations on in-person gatherings. Additionally, training can be expensive as it requires resources for space, equipment, and other costs for both trainers and participants. Moreover, access to rooms, machines, and tools necessary for human development is often limited, further hindering opportunities for growth and learning.</p>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="img/porto-spacecollab-1.jpg"/>
+                    <h5 class="video-title">The Solution</h5>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="img/porto-spacecollab-2.jpg"/>
+                    <p class="video-description">We offer SpaceCollab, a virtual collaboration platform with several key features. Firstly, it enables multiplayer interaction, allowing multiple individuals to inhabit the same virtual space and engage with one another. Secondly, SpaceCollab is multiplatform, supporting various VR and non-VR devices, making it accessible to anyone. Thirdly, it provides true immersive presence through customizable avatars and spatial audio. Fourthly, it fosters interactivity by enabling users to engage with objects and other players within the virtual environment. Lastly, SpaceCollab is highly customizable, allowing users to easily tailor scenarios and incorporate additional objects according to their needs.</p>
+                    <h5 class="video-title">My Contributions</h5>
+                    <p class="video-description">1. Set the product vision, because developing VR requires many human resources and time-consuming. Based on our previous experience in doing many B2B business. Need customizable VR and modular</p>
+                    <p class="video-description">2. Leading the team</p>
+                    <p class="video-description">3. Designing and developing the cloud system, because at that time we cannot hire backend developers because of the resource scarcity</p>
+                    <p class="video-description">4. Solving multiplatform (VR, Mobile, Desktop), designing the interactions that fits to all platform.</p>
+                    <h5 class="video-title">Results</h5>
+                    <p class="video-description">Through the year and COVID Pandemic situation, SpaceCollab has reduced the development time, previously 3 months project to 1 month project. Maintaining effectiveness of the development lifecycle and boost B2B sales of the company.</p>
+                    <h5 class="video-title">Applications</h5>
+                    <br>
+                    <h6 class="video-title">Angkasa Pura II APSD</h6>
+                    <p class="video-description">Marshalling Training is a must annual training for airline companies. Angkasa Pura Sarana Digital (APSD) applied SpaceCollab increases efficiency to reduce 99% of high-risk accidents and lower costs and time.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe loading="lazy" class="embed-responsive-item" data-src="https://www.youtube.com/embed/_Gvncm7O78g?si=tbKqikfRP4Yq8cwc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    <h6 class="video-title">POLRI</h6>
+                    <p class="video-description">Designed for high visibility event in Indonesia (G20) with several presidents visiting, this is an Integrated Physical-Digital Asset of the National Police Force of the Republic of Indonesia as one Metaverse Ecosystem for security planning.</p>
+                    <p class="video-description">Imagine all commanders of the National Police Force of the Republic of Indonesia will have to go to a particular location. Still, with this solution, they don't need to travel all around Bali, so they can remain in the office and map a simulation using VR to review the security plan.</p>
+                    <p class="video-description">This projects implemented the real-time dynamic map and 3D environment using 3D scanning to replicate the event surroundings with Assets to create their scenarios. e.g. demonstration and terrorism simulation. </p>
+                    <!-- <img loading="lazy" decoding="async" class="img-fluid porto-media" src="https://static.wixstatic.com/media/0a6e18_4dee59dc7b7d483b9b389ee0d08a670e~mv2.png/v1/fill/w_600,h_338,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0a6e18_4dee59dc7b7d483b9b389ee0d08a670e~mv2.png"/> -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe loading="lazy" class="embed-responsive-item" data-src="https://www.youtube.com/embed/jfw72XoWV5w?si=6i02vHm5YOiitUlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    <h6 class="video-title">Ministry of Manpower (KEMNAKER)</h6>
+                    <p class="video-description">Ministry of Manpower (KEMNAKER) needs to innovate Vocational VR Training for Heavy Equipment Mechanics of Indonesia to accelerate training job seekers to improve their skills in the mechanics of Heavy Equipment (PC200-8M0 Excavator).</p>
+                    <p class="video-description">Creating a virtual version of the Training Center (Balai Pelatihan) to cost and time efficiently. With that goal, we facilitate training in several regions virtually. Our solutions contain Tutorial Mode & Assessment Mode, Heavy Machine Components (PC200-8M0 Excavator) Identification Module, and Assembly Process Basic Procedures. This Vocational VR Training provides innovative methods for increasing</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe loading="lazy" class="embed-responsive-item" data-src="https://www.youtube.com/embed/F1zN8r1QjgQ?si=5MuDdivat3X028FF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    <h6 class="video-title">Ministry of Transporation</h6>
+                    <p class="video-description">A digital transformation project in Balai Pengujian, Directorate General of Railways, Ministry of Transportation (Kemenhub), by adjusting immersive tools during workshop services for expertizing Human Resource competency. The Ministry of Transportation needs innovations for storing facilities to implement cost and time efficiency.</p>
+                    <p class="video-description">Railway Training and Testing Center (Balai Pelatihan dan Pengujian Perkeretaapian) of the Ministry of Transportation (Kemenhub) in Bekasi has a limited land capacity for practicing training and testing. Besides, there's only one training center in Indonesia to conduct testing certification for railway experts all over Indonesia. A large amount of production cost required to procure training equipment or facilities and space to store the model trains each year becomes an obstacle for the Ministry of Transportation.</p>
+                    <p class="video-description">The railway training by delivering Cutting-Edge Collaborative VR Simulation for Railways Inspection Training with real-time assessment, Instant On-The-Spot Data Analytics for assessors to analyze the trainee behavior.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe loading="lazy" class="embed-responsive-item" data-src="https://www.youtube.com/embed/LzaF2wkE6IQ?si=TRrp6e19-4cxi4xF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    <h6 class="video-title">Faculty of Nursing, University Indonesia</h6>
+                    <p class="video-description">As one of the significant top universities in Indonesia, the Faculty of Nursing (Universitas Indonesia) needs to innovate for practical purposes and empower interactive nursing practices.</p>
+                    <p class="video-description">Creating the easiest way for nurses to practically demonstrate, such as a role-play simulation and a scenario of actual situation-based. Solutions we facilitate are Tools & Equipment Preparation, Checking Vital Signs for wound treatment, Digital Tablet Interaction, Pop Out Educational Video on Object Interaction, Real-time Simulation & Assessment, Tutorial & Practice Mode, and Participant PoV (Oculus Rift S) & Assessor PoV (PC).</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe loading="lazy" class="embed-responsive-item" data-src="https://www.youtube.com/embed/wEdVA4bJ3Qg?si=WKnIrz_2aaDW26Ou" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                            <div id="inline-porto-cosmize" class="modal-dialog lity-hide">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title video-title">COSMIZE</h3>
+                  </div>
+                  <div class="modal-body overflow-auto">
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="img/porto-cosmize-0.webp"/>
+                    <h5 class="video-title">About</h5>
+                    <p class="video-description">The name "COSMIZE" is a combination of Cosmos and Customize, where everybody can create and customize their own cosmic imagination. This platform allows for creating community activities, events, quests, and more possibilities in the future. It is a place for making imagination become reality, to embrace the spirit of decentralization through community-driven activities.</p>
+                    <p class="video-description">Not only chat with friends, you can also enjoy limited-time events held in special spaces in collaboration with famous brands and companies.</p>
+                    <br>
+                    <h5 class="video-title">The Challenge</h5>
+                    <p class="video-description">The Metaverse has skyrocketed in popularity, poised to become humanity's second world. It's not just an escape from reality; it's a canvas where people can fully express themselves and turn their wildest imaginations into tangible experiences within a vibrant community setting. We envision an ecosystem where individuals can harness the power of their second reality, empowered by blockchain technology to ensure transparency and trust. Our goal is to foster a space where creativity flourishes, enabling communities to craft their own digital goods and shape the Metaverse into a dynamic playground of endless possibilities.</p>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="img/porto-cosmize-3.webp"/>
+                    <h5 class="video-title">The Solution</h5>
+                    <p class="video-description">Introducing COSMIZE Metaverse, "A place for connecting your passion". Within COSMIZE, users have the freedom to host events, personalize avatars, and create unique virtual spaces—all seamlessly integrated with an EVM-based blockchain for unparalleled transparency and security.</p>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="img/porto-cosmize-4.webp"/>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="img/porto-cosmize-5.webp"/>
+                    <h5 class="video-title">My Contributions</h5>
+                    <p class="video-description">1. Designing the solution, combining all SHINTA VR products into a single platform</p>
+                    <p class="video-description">2. Leading the blockchain development and syncing blockchain to the game by building our own infrastructure to sync Web3 and Web2 data.</p>
+                    <p class="video-description">3. Project Management of this complex product</p>
+                    <p class="video-description">4. CI/CD and development efficiency by automating tasks</p>
+                    <h5 class="video-title">Results</h5>
+                    <p class="video-description">COSMIZE has been perceived as a metaverse that is good-looking and above standard even by Japanese. They were impressed with our quality and bunch of features inside.</p>
+                    <h5 class="video-title">The Pioneer Metaverse on Astar Network</h5>
+                    <p class="video-description">We leverage Astar Chain to build and engage a passionate community, creating a dynamic hub frequently utilized by leading IPs and brands such as Toyota, Hakuhodo, and Mizuho Bank.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe loading="lazy" class="embed-responsive-item" data-src="https://www.youtube.com/embed/ZjJkGBSw6z0?si=UluOu8_KfZsNwrId" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h5 class="video-title">The Room Creation</h5>
+                    <p class="video-description">In Room, you can freely arrange furniture. Here we explain basic operations such as placing, editing, and deleting furniture.</p>
+                    <img loading="lazy" decoding="async" class="img-fluid porto-media" src="https://cosmize.gitbook.io/~gitbook/image?url=https:%2F%2F2174159331-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F2KiCdYDNQGt16i1Uzydp%252Fuploads%252Ftz9McQZ0YCpadT7ZergK%252Fhow%2520to%2520edit%2520room%25203.png%3Falt=media%26token=78f6d3f3-8de0-46d6-b01f-6c7a999b2776&width=768&dpr=4&quality=100&sign=53b899d1270ff20c6e76af1dcbdd4625e6c2bf863ab4555840ebc23dee0939f1"/>
+                    <h5>More detailed information about COSMIZE</h5>
+                    <p>Please access our <a href="https://cosmize.gitbook.io/cosmize">Gitbook</a> to learn more information about this project.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
