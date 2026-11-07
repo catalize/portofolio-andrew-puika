@@ -29,3 +29,18 @@
     max-width: 1000px;
   }
 }
+
+/* ---------- Catalize additions ---------- */
+.nav-avatar { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; margin-right: 10px; vertical-align: middle; }
+.nav-brand-text { font-weight: 600; letter-spacing: .08em; text-transform: lowercase; vertical-align: middle; }
+.home-tagline { max-width: 560px; margin: 18px auto 0; font-size: 1.05rem; opacity: .9; }
+.home-cta { margin-top: 26px; }
+.home-cta .btn { margin: 6px 8px; }
+.orcid-icon { width: 1.3em; height: 1.3em; vertical-align: -0.22em; }
+.home-area .fixed-wrapper .social-icons .orcid-icon { width: 22px; height: 22px; vertical-align: middle; }
+ul.info-description { padding-left: 1.2em; margin-bottom: 1rem; }
+ul.info-description li { margin-bottom: .45rem; }
+
+.contact-section .contact-info .list-info .info-icon .orcid-icon { position: absolute; left: 0; top: 50%; transform: translate(0, -50%); width: 36px; height: 36px; color: var(--custom, #009e66); }
+.services-section .col-lg-4 > .single-service { height: calc(100% - 30px); }
+.nav-brand-by { font-weight: 300; letter-spacing: .02em; opacity: .75; text-transform: none; font-size: .8em; }

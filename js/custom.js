@@ -17,7 +17,12 @@
   $(function() {
     // Code here executes When the DOM is loaded...
     // Load partials pages
-    console.log("Hai");
+    // Open a lightbox section from any in-page button (hero CTAs, cross-links)
+    $(document).on('click', '[data-open-section]', function (e) {
+      e.preventDefault();
+      var id = $(this).attr('data-open-section');
+      $('.navbar .navbar-nav .nav-link[href="#' + id + '"]').trigger('click');
+    });
     $("div[data-includeHTML]").each(function () {                
         $(this).load($(this).attr("data-includeHTML"));
         console.log("loaded");
